@@ -1,88 +1,88 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ifc.andrieli;
-
+/*
+Feio por andri.
+*/
 import java.util.Date;
-import java.util.Scanner;
 
-/**
- *
- * @author aluno
- */
 public class Estudante {
-
-    private String nomeCompleto;
+    private String nome;
     private Date dataNascimento;
     private String cpf;
     private char genero;
-    private String enderecoEletronico;
-    private double telefoneContato;
-    private int anoIngresso;
-    private int semestreIngresso;
-    private String situacaoAcademica;
-    private String ensinoMedioIntegrado;
     private String matricula;
     private String email;
-    private String graduacao;
-    private String posGraduacao;
-    
-
-    public Estudante() {
-        this.nomeCompleto = "Nobody";
+    private String telefone;
+    private int anoIngresso;
+///////////////////////////////////
+    public Estudante(){        
+       
     }
-
-    // GERAR MATRÍCULA (ano + semestre + 5 dígitos)
-    public void gerarMatricula() {
-        this.matricula = anoIngresso + "" + semestreIngresso;
+       
+    public int obterIdade(Date hoje) {
+    int idade = 0;
+    return idade;
     }
-
-// GETTERS E SETTERS
-    public String getNome() {
-        return this.nomeCompleto;
+    public String getNome (){
+        return this.nome;
     }
-
-    public void setNome(String nome) {
-        this.nomeCompleto = nome;
+           
+    public void setNome (String _nome){
+        this.nome = _nome;
     }
-
-    public String getCpf() {
-        return cpf;
+           
+    public Date getDate (){
+        return this.dataNascimento;
     }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+           
+    public void setDate (Date _dataNascimento){
+        this.dataNascimento = _dataNascimento;
     }
-
-    public int getAnoIngresso() {
-        return anoIngresso;
+   
+    public String getCpf (){
+        return this.cpf;
     }
-
-    public void setAnoIngresso(int anoIngresso) {
-        this.anoIngresso = anoIngresso;
+           
+    public void setCpf (String _cpf){
+        this.cpf = _cpf;
     }
-
-    public int getSemestreIngresso() {
-        return semestreIngresso;
+   
+    public char getGenero (){
+        return this.genero;
     }
-
-    public void setSemestreIngresso(int semestreIngresso) {
-        this.semestreIngresso = semestreIngresso;
+           
+    public void setGenero (char _genero){
+        this.genero = _genero;
     }
-
-    public String getMatricula() {
-        return matricula;
+   
+    public String getMatricula (){
+        return this.matricula;
     }
-
-    public String getSituacaoAcademica() {
-        return situacaoAcademica;
+           
+    public void setMatricula (String _matricula){
+        this.matricula = _matricula;
     }
-
-    public void setSituacaoAcademica(String situacaoAcademica) {
-        this.situacaoAcademica = situacaoAcademica;
+       
+    public String getEmail (){
+        return this.email;
     }
-   }
-
-
-
+           
+    public void setEmail (String _email){
+        this.email = _email;
+    }
+   
+    public String getTelefone (){
+        return this.telefone;
+    }
+           
+    public void setTelefone (String _telefone){
+        this.telefone = _telefone;
+    }    
+       
+    public int getAnoIngresso (){
+    return this.anoIngresso;
+    }
+           
+    public void setAnoIngresso (int _anoIngreso){
+        this.anoIngresso = _anoIngreso;    
+    }
+}
