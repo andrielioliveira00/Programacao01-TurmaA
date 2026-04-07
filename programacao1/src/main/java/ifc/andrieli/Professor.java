@@ -1,94 +1,102 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ifc.andrieli;
 
 import java.util.Date;
 
+/*
+ Feito por andri
+ */
 public class Professor {
-
+    private String nivelEnsino;
     private String nomeCompleto;
-    private String siape;
+    private int siape;
     private String email;
-    private String telefone;
+    private int telefoneContato;
     private String titulacaoAcademica;
     private String areaAtuacao;
     private String regimeTrabalho;
-    private Date dataIngresso;
-    private String graduacao;
-    private String especializacao;
-    private String mestrado;
-    private String doutorado;
-    private String semestre;
-
-    public Professor() {
-        this.nomeCompleto = "Nobody";
+    private Date dataIngreso;
+    private String formacao;
+//////////////////////////////
+    public Professor (){
     }
-
-// GETTERS E SETTERS
-    public String getNome() {
-        return nomeCompleto;
+   
+    public String getNivelEnsino (){
+        return this.nivelEnsino;
     }
-
-    public void setNome(String nome) {
-        this.nomeCompleto = nome;
+           
+    public void setNivelEnsino (String _nivelEnsino){
+        this.nivelEnsino = _nivelEnsino;
     }
-
-    public String getSiape() {
-        return siape;
+   
+    public String getNomeCompleto (){
+        return this.nomeCompleto;
     }
-
-    public void setSiape(String siape) {
-        this.siape = siape;
+           
+    public void setNomeCompleto (String _nomeCompleto){
+        this.nomeCompleto = _nomeCompleto;
     }
-
-    public String getEmail() {
-        return email;
+   
+    public int getSiape (){
+        return this.siape;
     }
-
-    public void setEmail(String email) {
-        this.email = email;
+           
+    public void setNomeCompleto (int _siape){
+        this.siape = _siape;
+    }    
+       
+    public String getEmail (){
+        return this.email;
     }
-
-    public String getTelefone() {
-        return telefone;
+           
+    public void setEmail (String _email){
+        this.email = _email;
     }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+   
+    public int getTelefoneContato (){
+        return this.telefoneContato;
     }
-
-    public String getTitulacaoAcademica() {
-        return titulacaoAcademica;
+           
+    public void setTelefoneContato (int _telefoneContato){
+        this.telefoneContato = _telefoneContato;
+    }    
+       
+    public String getTitulacaoAcademica (){
+        return this.titulacaoAcademica;
     }
-
-    public void setTitulacaoAcademica(String titulacaoAcademica) {
-        this.titulacaoAcademica = titulacaoAcademica;
+           
+    public void setTitulacaoAcademica (String _titulacaoAcademica){
+        this.titulacaoAcademica = _titulacaoAcademica;
     }
-
-    public String getAreaAtuacao() {
-        return areaAtuacao;
+   
+    public String getAreaAtuacao (){
+        return this.areaAtuacao;
     }
-
-    public void setAreaAtuacao(String areaAtuacao) {
-        this.areaAtuacao = areaAtuacao;
+           
+    public void setAreaAtuacao (String _areaAtuacao){
+        this.areaAtuacao = _areaAtuacao;
     }
-
-    public String getRegimeTrabalho() {
-        return regimeTrabalho;
+   
+    public String getRegimeTrabalho (){
+        return this.regimeTrabalho;
     }
-
-    public void setRegimeTrabalho(String regimeTrabalho) {
-        this.regimeTrabalho = regimeTrabalho;
+           
+    public void setRegimeTrabalho (String _regimeTrabalho){
+        this.regimeTrabalho = _regimeTrabalho;
     }
-
-    public Date getDataIngresso() {
-        return dataIngresso;
+   
+    public Date getDataIngresso (){
+        return this.dataIngreso;
     }
-
-    public void setDataIngresso(Date dataIngresso) {
-        this.dataIngresso = dataIngresso;
+           
+    public void setDataIngresso (Date _dataIngreso){
+        this.dataIngreso = _dataIngreso;
     }
-    
+   
+    public String getFormacao (){
+        return this.formacao;
+    }
+           
+    public void setFormacao (String _formacao){
+        this.formacao = _formacao;
+    }
 }
