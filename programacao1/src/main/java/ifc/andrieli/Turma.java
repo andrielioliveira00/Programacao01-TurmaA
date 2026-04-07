@@ -1,48 +1,45 @@
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ifc.andrieli;
 
 import java.util.HashSet;
 import java.util.Set;
 
+/*
+    Feito por andri
+ */
 public class Turma {
-
-private String Nnome;
-
-// "Responsável" pela turma (igual ao líder no exemplo)
-private Professor ProfessorResponsavel;
-
-// Conjuntos (igual ao HashSet do quadro)
-private Set<Estudante> estudantes;
-private Set<Disciplina> disciplinas;
-private Set<Professor> professores;
-
-// Construtor
-public Turma(String nome) {
-this.nome = nome;
-this.estudantes = new HashSet<>(); // size = 0
-this.disciplinas = new HashSet<>(); // size = 0
-this.professores = new HashSet<>(); // size = 0
+    private String nome;
+    private String ano;
+    private String curso;
+    
+    private Set<Estudante> discentes = new HashSet<Estudante>();
+    Set<Disciplina> discipina = new HashSet<Disciplina>();
+    Turma professor = new Turma();
+    ///////////////////
+    public Turma(){
+    }
+   
+    public String getNome (){
+        return this.nome;
+    }
+           
+    public void setNome (String _nome){
+        this.nome = _nome;
+    }
+   
+    public String getAno (){
+    return this.ano;
+    }
+           
+    public void setAno (String _ano){
+        this.ano = _ano;    
+    }
+   
+    public String getCurso (){
+        return this.curso;
+    }
+           
+    public void setCurso (String _curso){
+        this.curso = _curso;
+    }
 }
 
-// Associações
-public void setProfessorResponsavel(Professor p) {
-this.   ProfessorResponsavel = p;
-}
-
-public void adicionarDiscente(Estudante d) {
-Estudante.dd(d);
-}
-
-public void adicionarDisciplina(Disciplina d) {
-disciplinas.add(d);
-}
-
-public void adicionarProfessor(Professor p) {
-professores.add(p);
-
-}
-}
